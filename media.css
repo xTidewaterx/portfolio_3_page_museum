@@ -1,0 +1,119 @@
+
+@media (min-width: 100px) {
+    .product-list {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    nav {
+      background-color: cornflowerblue;
+      
+    }
+
+    
+  }
+
+
+  
+  
+  @media (min-width: 600px) {
+
+    /*position static allows the text to stay at the top when scrolling down, for mobile menu stuff/under 600px we disregard position:static*/
+    
+    .topNav {
+      position: static;
+      float: right;
+      text-align: right;
+      width: 100%;
+     
+    
+    
+    
+    
+    }
+
+    .blogPosts {
+      column-count: 3;
+      max-width: 100vw;
+    }
+
+   
+    
+    .featured {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .reviews__content,
+    .selling-points {
+      flex-direction: row;
+    }
+  
+    header {
+      justify-content: start;
+    }
+  
+    nav {
+      background-color:transparent;
+      display:block;
+   
+      top: 0;
+    }
+  
+    nav li {
+      display: inline-block;
+      padding: 0px;
+    }
+  
+    header label {
+      display: none;
+
+      position: absolute;
+      top: 0;
+    }
+  
+  
+  
+  
+  @media (min-width: 800px) {
+  
+   nav {margin:px}
+  }
+
+  .column {
+    min-width: 290px;
+  }
+
+
+  }
+
+
+  /* when there is a cool column layout with coloumns, you can\ with the media change it oto direction rows:, that's for the different media pages*/
+
+
+
+  @media (max-height:550px) {
+
+    .blogPosts {
+      margin-top: 16vw;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-height:550px) {
+
+    .blogPosts {
+      margin-top: 16vw;
+    }
+  }

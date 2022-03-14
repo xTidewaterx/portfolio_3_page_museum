@@ -1,0 +1,148 @@
+
+
+
+.blogPosts {
+
+-webkit-column-gap: 30px;
+-moz-column-gap: 30px;
+  column-count: 2;
+  margin-top: 20px;
+  display: flexbox;
+  margin: 0 auto;
+  align-content: center;
+  column-gap: 9vw;
+
+
+ 
+
+}
+
+.blogPostContainer {
+  /*had to remove the styling that made this div bigger than the body, now the above 600px e xperiments are all coherent and the card renmains ininteresteed throughout the ewhole xperiemnt, width removed, we give it directions and the nalter it by having max and min, for the percentage to remain*/
+  width: 10vw;
+  background: rgb(151, 15, 15);
+
+
+}
+
+
+
+
+a {
+ text-decoration: none; /*this made the underlines go away on the a links*/
+  text-align: center;
+}
+
+img {
+/*all is now centered due to display flex with margin: 0 auto; on the img, on the text we used text-align: center;*/
+  display: flex;
+  margin: 
+  0 auto;
+  max-width: 15vw;
+ 
+ 
+}
+
+
+a.blogPosts :nth-child(1) {
+  margin-top: 0;
+}
+
+/*now, all the columns are the same height, except a few differences due to some headlines stretching past two lines making the card a little taller, thank to column-count 2 and removing the default margin on the first child*/
+
+main.container.content {
+
+  margin-top: -200px;
+}
+
+
+.blogPosts {
+ 
+  height: auto;
+ 
+
+}
+
+
+
+a.blogPosts {
+  width: 40vw;
+   height: auto;
+ 
+ 
+   background:white 50%;
+   background-size: cover;
+ }
+
+.cardColour {
+
+  display: block;
+
+   width: 16vw;
+   height: auto;
+
+   background:rgb(117, 189, 248) 50%;
+   background-size: cover;
+   border-radius: 5%;
+   margin-bottom: 20vw;
+   max-height: 35vw;
+   min-height: 30vw;
+   min-height: 40vw;
+
+   break-inside: avoid-column;
+ }
+
+ h5 {
+
+   font-size: 3vw;
+   color: rgb(255, 255, 255);
+ }
+
+ .cardColour {
+
+  display: block;
+
+   width: 16vw;
+   height: auto;
+   padding: 4vw;
+   padding-bottom: min(50px);
+   background:rgb(174, 150, 241) 50%;
+   background-size: cover;
+   border-radius: 5%;
+   margin-bottom: 20vw;
+   max-height: 35vw;
+   min-height: 30vw;
+   min-height: 40vw;
+
+ }
+
+
+a {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(255, 255, 255);
+ }
+ /*important, this setup ensures equally sized boxes across all viewPorts, despite the inherit differences of different layouts*/
+
+ .active {text-decoration: underline;}
+
+ main.container.content {
+    margin-top: -200px;
+}
+
+.content {
+    background: #fff0;
+    flex: 1 0 auto;
+
+    width: 50%;
+    margin: 0 auto;
+        margin-top: 0px;
+    max-height: 400px;
+    border-radius: 5%;
+}
+
+main {
+    height: inherit;
+    width: 100%;
+    display: table;
+    display: table;
+}
